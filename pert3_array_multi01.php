@@ -5,7 +5,10 @@
         array("Dinda","21212121","Negara"),
         array("Hidayat","32323223","Surabaya")
     );
-    
-    echo "Mahasiswa ".$mhs[1][0];
-    echo " dengan NIM " . $mhs[1][1];
-    echo " berasal dari ".$mhs[1][2];
+
+    for($brs=0;$brs<4;$brs++){
+        echo "Mahasiswa ".$mhs[$brs][0];
+        echo " dengan NIM " . $mhs[$brs][1];
+        echo " berasal dari ".$mhs[$brs][2];
+        echo "<br>";
+    }
